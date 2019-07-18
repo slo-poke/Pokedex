@@ -1,0 +1,20 @@
+<div class="pokeInfo">
+  <div class="nav">
+    <a (click)="(Pokemon.length == 0)">Regions</a>
+  </div>
+  <app-select-region
+    *ngIf="Pokemon.length == 0"
+    [pokemonInRegion]="Pokemon"
+    (loadEventEmmiter)="startLoad($event)"
+  ></app-select-region>
+  <app-load-screen *ngIf="onLoad" [onLoad]="onLoad"></app-load-screen>
+  <app-poke-list
+    *ngIf="Pokemon.length > 0 && doneLoading == true && selectedPokemon == null"
+    [pokemonInRegion]="Pokemon"
+    (loadEventEmmiter)="getPokeInfo($event)"
+  ></app-poke-list>
+  <app-poke-info
+    *ngIf="selectedPokemon != null"
+    [selectedPokemon]="selectedPokemon"
+  ></app-poke-info>
+</div>

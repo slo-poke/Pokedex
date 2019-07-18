@@ -1,0 +1,44 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$poke-app-normal: mat-pallet($mat-gray, 50, 50, 50);
+$poke-app-fire: mat-pallet($mat-orange, 700, 700, 700);
+$poke-app-fighting: mat-pallet($mat-red, 900, 900, 900);
+$poke-app-water: mat-pallet($mat-blue, 400, 400, 400);
+$poke-app-flying: mat-pallet($mat-deep-purple, 200, 200, 200);
+$poke-app-grass: mat-pallet($mat-green, 400, 400, 400);
+$poke-app-poison: mat-pallet($mat-purple, 600, 600, 600);
+$poke-app-electric: mat-pallet($mat-yellow, 600, 600, 600);
+$poke-app-ground: mat-pallet($mat-amber, A100, A100, A100);
+$poke-app-psychic: mat-pallet($mat-pink, 700, 700, 700);
+$poke-app-rock: mat-pallet($mat-brown, 400, 400, 400);
+$poke-app-ice: mat-pallet($mat-cyan, 100, 100, 100);
+$poke-app-bug: mat-pallet($mat-lime, 700, 700, 700);
+$poke-app-dragon: mat-pallet($mat-deep-purple, A400, A400, A400);
+$poke-app-ghost: mat-pallet($mat-purple, 900, 900, 900);
+$poke-app-dark: mat-pallet($mat-brown, 900, 900, 900);
+$poke-app-steel: mat-pallet($mat-gray, 400, 400, 400);
+$poke-app-fairy: mat-pallet($mat-pink, 200, 200, 200);
+
+// $poke-type-theme: (
+//   $poke-app-normal,
+//   $poke-app-fire,
+//   $poke-app-fighting,
+//   $poke-app-water,
+//   $poke-app-flying,
+//   $poke-app-grass,
+//   $poke-app-poison,
+//   $poke-app-electric,
+//   $poke-app-ground,
+//   $poke-app-psychic,
+//   $poke-app-rock,
+//   $poke-app-ice,
+//   $poke-app-bug,
+//   $poke-app-dragon,
+//   $poke-app-ghost,
+//   $poke-app-dark,
+//   $poke-app-steel,
+//   $poke-app-fairy
+// );
+
+// @include angular-material-theme($poke-type-theme);

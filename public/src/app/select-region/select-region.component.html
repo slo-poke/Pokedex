@@ -1,0 +1,13 @@
+<div class="pokeInfo" *ngIf="!onLoad">
+  <mat-chip-list [class]="chipClass" aria-label="Pokemon region list">
+    <mat-chip *ngFor="let chip of regionChips" selected color="primary">
+      <a (click)="startLoad(chip.url)">{{ chip.name }}</a>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+
+<!-- Display on a different page... nested component? -->
+<!-- <div class="flex-container">
+<div class="flex-box" *ngFor="let poke of pokemonInRegion">
+  <img [src]="poke.sprites.front_default" />
+</div>-->

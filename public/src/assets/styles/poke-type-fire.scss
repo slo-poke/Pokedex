@@ -1,0 +1,8 @@
+@import '~angular/material/theming';
+@include mat-core();
+
+$poke-type-primary: mat-pallet($mat-orange, 700, 700, 700);
+
+$poke-type-fire: ($poke-type-primary);
+
+@include angular-material-theme($poke-type-fire);

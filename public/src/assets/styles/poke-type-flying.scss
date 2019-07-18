@@ -1,0 +1,8 @@
+@import '~angular/material/theming';
+@include mat-core();
+
+$poke-type-primary: mat-pallet($mat-deep-purple, 200, 200, 200);
+
+$poke-type-flying: ($poke-type-primary);
+
+@include angular-material-theme($poke-type-flying);

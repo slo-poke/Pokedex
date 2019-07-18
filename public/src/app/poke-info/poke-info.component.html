@@ -1,0 +1,36 @@
+<div class="pokeInfoScreen">
+  <img
+    [src]="selectedPokemon.sprites.front_default"
+    alt="{{ selectedPokemon.name }} image"
+  />
+  <h3>{{ selectedPokemon.id }} {{ selectedPokemon.name }}</h3>
+  <p *ngFor="let t of selectedPokemon.types">{{ t.type.name }}</p>
+  <div class="stats">
+    <ul *ngFor="let s of selectedPokemon.stats">
+      <li>{{ s.stat.name }}: {{ s.base_stat }}</li>
+    </ul>
+  </div>
+  <div class="measurements">
+    <ul>
+      <li>Height: {{ selectedPokemon.height }}</li>
+      <li>Weight: {{ selectedPokemon.weight }}</li>
+    </ul>
+  </div>
+  <h2>Abilities</h2>
+  <hr />
+  <ul *ngFor="let a of selectedPokemon.pokeAbilities">
+    <li>{{ a.name }}</li>
+    <ul>
+      <li>{{ a.desc }}</li>
+    </ul>
+  </ul>
+  <h2>Moves</h2>
+  <hr />
+  <ul *ngFor="let m of selectedPokemon.pokeMoves">
+    <li>{{ m.name }}</li>
+    <ul>
+      <li>{{ m.desc }}</li>
+      <li>{{ m.type }}</li>
+    </ul>
+  </ul>
+</div>

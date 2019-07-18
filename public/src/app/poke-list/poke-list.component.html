@@ -1,0 +1,7 @@
+<div class="flex-container">
+  <div class="flex-box" *ngFor="let poke of pokemonInRegion">
+    <a (click)="loadPokemon(poke.id)"
+      ><img [src]="poke.sprites.front_default"
+    /></a>
+  </div>
+</div>

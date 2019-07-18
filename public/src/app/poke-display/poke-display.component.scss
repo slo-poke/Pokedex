@@ -1,0 +1,18 @@
+.pokeInfo {
+  width: 300px;
+  margin: 0px auto;
+  height: 340px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.pokeInfo::-webkit-scrollbar {
+  width: 0.5em;
+}
+.pokeInfo::-webkit-scrollbar-track {
+  display: none;
+}
+.pokeInfo::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.137);
+  border-radius: 10px;
+}

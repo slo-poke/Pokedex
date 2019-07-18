@@ -1,0 +1,8 @@
+@import '~angular/material/theming';
+@include mat-core();
+
+$poke-type-primary: mat-pallet($mat-purple, 600, 600, 600);
+
+$poke-type-poison: ($poke-type-primary);
+
+@include angular-material-theme($poke-type-poison);

@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$poke-type-primary: mat-pallet($mat-gray, 400, 400, 400);
+
+$poke-type-steel: ($poke-type-primary);
+
+@include angular-material-theme($poke-type-steel);

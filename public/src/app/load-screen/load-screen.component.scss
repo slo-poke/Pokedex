@@ -1,0 +1,15 @@
+.pokeLoad {
+  width: 150px;
+  height: 150px;
+  margin-top: 12%;
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
